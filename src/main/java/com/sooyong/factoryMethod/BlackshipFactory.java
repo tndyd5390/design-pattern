@@ -4,7 +4,7 @@ public class BlackshipFactory implements ShipFactory {
 
 
   @Override
-  public Ship createShit() {
+  public Ship createShip() {
     return new Balckship();
   }
 }
