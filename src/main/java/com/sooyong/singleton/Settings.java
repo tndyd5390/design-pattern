@@ -11,6 +11,10 @@ public class Settings implements Serializable {
     return SettingsHolder.INSTANCE;
   }
 
+  protected Object readResolve() {
+    return getInstance();
+  }
+
   private static class SettingsHolder {
 
     private static final Settings INSTANCE = new Settings();
