@@ -2,15 +2,15 @@ package com.sooyong.singleton;
 
 public class Settings {
 
-  private static Settings instance;
-
   private Settings() {
   }
 
   public static Settings getInstance() {
-    if (instance == null) {
-      instance = new Settings();
-    }
-    return instance;
+    return SettingsHolder.INSTANCE;
+  }
+
+  private static class SettingsHolder {
+
+    private static final Settings INSTANCE = new Settings();
   }
 }
