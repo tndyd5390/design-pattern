@@ -2,6 +2,9 @@ package com.sooyong.prototype;
 
 public class App {
 
+  // prototype 기존 인스턴스를 복제하여 새로운 인스턴스를 만드는 방법
+  // 복잡한 객체를 만드는 과정을 숨길 수 있다.
+  // 복잡한 객체를 만드는 과정 자체가 복잡할 수 있다.
   public static void main(String[] args) throws CloneNotSupportedException {
     GithubRepository repository = new GithubRepository();
     repository.setUser("whiteship");
