@@ -1,4 +1,4 @@
-package com.sooyong.prototype.before;
+package com.sooyong.prototype;
 
 public class App {
 
