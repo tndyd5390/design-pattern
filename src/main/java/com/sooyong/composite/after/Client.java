@@ -9,6 +9,7 @@ public class Client {
     Bag bag = new Bag();
     bag.add(doranBlade);
     bag.add(healPotion);
+    bag.add(bag);
 
     Client client = new Client();
     client.printPrice(doranBlade);
